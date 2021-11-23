@@ -1,0 +1,123 @@
+/*
+body {
+   background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}*/
+
+header {
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+}
+
+.centerDiv {
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+    font-family: 'Roboto Thin', serif;
+}
+
+
+
+#logo {
+    margin-top:8rem;
+    display:none;
+}
+
+#hi {
+
+}
+
+#left {
+    width:50%;
+    margin-left:3rem;
+    display:none;
+}
+
+#right {
+    width:50%;
+    margin-right:3rem;
+    display:none;
+}
+
+#introButtons {
+
+    display:block;
+    justify-content:space-between;
+    margin-top:3rem;
+    display:none;
+
+}
+
+a {
+    display:inline-block;
+   padding:0.35em 1.2em;
+   border:0.1em solid #000000;
+    margin: 0.2em;
+   border-radius:0.9em;
+   box-sizing: border-box;
+   text-decoration:none;
+   font-family:'Roboto',sans-serif;
+   font-weight:300;
+   color:#000000;
+   text-align:center;
+   transition: all 0.5s;
+
+}
+
+a:hover{
+    color:#FFFFFF;
+    background-color:#000000;
+}
+
+/* Global
+html{
+    min-height: 100%;
+    overflow: hidden;
+}
+*/
+.line-1{
+    position: relative;
+    top: 50%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+
+}
+
+.firstLine {
+    display:none;
+}
+.secondLine {
+    display:none;
+}
+
+#about {
+    display: none;
+    justify-content:center;
+    margin-top:20px;
+    font-family: 'Roboto Thin', serif;
+    width:50%;
+    margin-left:25%;
+    text-align:center;
+    font-size:1rem;
+}
+
+
+.anim-typewriter{
+    animation: typewriter 3s steps(44) 1s 1 normal both,
+    blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+    from{width: 0;}
+    to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+    from{border-right-color: rgba(255,255,255,.75);}
+    to{border-right-color: transparent;}
+}

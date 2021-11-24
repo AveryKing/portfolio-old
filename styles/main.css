@@ -1,8 +1,8 @@
-/*
+
 body {
-   background: rgb(238,174,202);
-    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
-}*/
+    background: rgb(183,95,255);
+    background: radial-gradient(circle, rgba(183,95,255,1) 0%, rgba(70,123,255,1) 100%);
+}
 
 header {
     display:flex;
@@ -12,9 +12,10 @@ header {
 
 .centerDiv {
     display:flex;
+    font-weight:bold;
     justify-content:center;
     margin-top:20px;
-    font-family: 'Roboto Thin', serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 
@@ -24,21 +25,7 @@ header {
     display:none;
 }
 
-#hi {
 
-}
-
-#left {
-    width:50%;
-    margin-left:3rem;
-    display:none;
-}
-
-#right {
-    width:50%;
-    margin-right:3rem;
-    display:none;
-}
 
 #introButtons {
 
@@ -49,7 +36,8 @@ header {
 
 }
 
-a {
+.menuButton {
+
     display:inline-block;
    padding:0.35em 1.2em;
    border:0.1em solid #000000;
@@ -57,7 +45,7 @@ a {
    border-radius:0.9em;
    box-sizing: border-box;
    text-decoration:none;
-   font-family:'Roboto',sans-serif;
+    font-family: 'Raleway', sans-serif;
    font-weight:300;
    color:#000000;
    text-align:center;
@@ -65,7 +53,8 @@ a {
 
 }
 
-a:hover{
+.menuButton:hover{
+
     color:#FFFFFF;
     background-color:#000000;
 }
@@ -90,6 +79,21 @@ html{
 
 }
 
+.selectedButton {
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #000000;
+    margin: 0.2em;
+    border-radius:0.9em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.5s;
+    background-color: rgba(70,123,255,1);
+}
 .firstLine {
     display:none;
 }
@@ -97,7 +101,8 @@ html{
     display:none;
 }
 
-#about {
+
+#contact, #projects {
     display: none;
     justify-content:center;
     margin-top:20px;
@@ -106,6 +111,78 @@ html{
     margin-left:25%;
     text-align:center;
     font-size:1rem;
+}
+
+hr {
+    color: black;
+}
+#about {
+    font-weight:bold;
+
+
+    border-radius:20px;
+    display: none;
+    justify-content:center;
+    margin-top:20px;
+    font-family: 'Roboto Thin', serif;
+    width:50%;
+    margin-left:25%;
+    text-align:center;
+    font-size:1rem;
+}
+
+
+
+.soc {
+    margin-top: 30px;
+    display: block;
+    list-style: none;
+    text-align: center;
+}
+.soc li {
+    display: inline-block;
+}
+.soc a, .soc svg {
+    display: block;
+}
+.soc a {
+    display: inline-block;
+    position: relative;
+    height: 75px;
+    width: 75px;
+}
+.soc svg {
+    height: 100%;
+    width: 100%;
+}
+
+.icon {
+    background: black;
+    border-radius: 100%;
+    color: white;
+    fill: white;
+}
+.icon:hover {
+
+    color: black;
+    fill: black;
+}
+
+
+
+.github {
+    background: white;
+    color: black;
+    fill: black;
+}
+.github:hover {
+    background: #6441a5;
+
+}
+
+.linkedin:hover {
+    color: #007BB6;
+    fill: #007BB6;
 }
 
 
@@ -118,6 +195,6 @@ html{
     to{width: 24em;}
 }
 @keyframes blinkTextCursor{
-    from{border-right-color: rgba(255,255,255,.75);}
+    from{border-right-color: rgba(255,255,255,0);}
     to{border-right-color: transparent;}
 }

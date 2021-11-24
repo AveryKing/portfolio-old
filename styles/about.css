@@ -1,0 +1,38 @@
+.var-highlight{
+
+    color: #FF8D00;
+
+}
+.string-highlight{
+    transition: transform .2s;
+    color: #0f7022;
+}
+
+.string-highlight:hover {
+    transform: scale(1.5)
+}
+
+.typewriter {
+    font-size: 1.3em;
+    margin: 0;
+    font-family: "Courier New";
+}
+.typewriter:after{
+     content: "|";
+     animation: blink 500ms linear infinite alternate;
+ }
+
+@-webkit-keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@-moz-keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+@keyframes blink{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}

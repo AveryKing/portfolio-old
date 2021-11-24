@@ -4,12 +4,14 @@ body {
     background: radial-gradient(circle, rgba(183,95,255,1) 0%, rgba(70,123,255,1) 100%);
 }
 
+/* Header (logo image */
 header {
     display:flex;
     justify-content:center;
     margin-top:20px;
 }
 
+/* Intro text */
 .centerDiv {
     display:flex;
     font-weight:bold;
@@ -26,7 +28,7 @@ header {
 }
 
 
-
+/*Menu Buttons */
 #introButtons {
 
     display:block;
@@ -59,26 +61,6 @@ header {
     background-color:#000000;
 }
 
-/* Global
-html{
-    min-height: 100%;
-    overflow: hidden;
-}
-*/
-.line-1{
-    position: relative;
-    top: 50%;
-    width: 24em;
-    margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
-    font-size: 180%;
-    text-align: center;
-    white-space: nowrap;
-    overflow: hidden;
-    transform: translateY(-50%);
-
-}
-
 .selectedButton {
     display:inline-block;
     padding:0.35em 1.2em;
@@ -94,6 +76,24 @@ html{
     transition: all 0.5s;
     background-color: rgba(70,123,255,1);
 }
+
+
+/*Typing effect */
+.line-1{
+    position: relative;
+    top: 50%;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+
+}
+
+
 .firstLine {
     display:none;
 }
@@ -102,6 +102,7 @@ html{
 }
 
 
+/* Contact & Projects sections */
 #contact, #projects {
     display: none;
     justify-content:center;
@@ -113,13 +114,9 @@ html{
     font-size:1rem;
 }
 
-hr {
-    color: black;
-}
+/* About Section */
 #about {
     font-weight:bold;
-
-
     border-radius:20px;
     display: none;
     justify-content:center;
@@ -132,7 +129,7 @@ hr {
 }
 
 
-
+/** GitHub + LinkedIn Icons on Contact page */
 .soc {
     margin-top: 30px;
     display: block;
@@ -186,6 +183,7 @@ hr {
 }
 
 
+/* Typewriter animations */
 .anim-typewriter{
     animation: typewriter 3s steps(44) 1s 1 normal both,
     blinkTextCursor 500ms steps(44) infinite normal;

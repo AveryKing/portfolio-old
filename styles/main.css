@@ -166,7 +166,17 @@ header {
 }
 
 
+.card {
+    background-color: rgba(250, 250, 250, 0.2) !important;
+    border-radius: 10px !important;
+    border: 4px solid black;
 
+}
+
+.container {
+    justify-content: center !important;
+    display: flex !important;
+}
 .github {
     background: white;
     color: black;
